@@ -14,14 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/miestilo.css">
 </head>
 <body>
-	<?php
-	   /*if(isset($_GET["errorusuario"]))
-	      if($_GET["errorusuario"]=="si"){
-	?>
-	<script language="javascript">alert("Datos incorrectos");</script>
-	<?php 
-	}*/
-	?>
+
 	<div class="log col-md-4 col-md-offset-4">
 	<h1><center>Tickets</center></h1>
 	<center><small>Usuario: <?php echo utf8_encode($_SESSION['nombreusr']); ?></small></center>
@@ -55,6 +48,6 @@
 		    ?>
 			
 		</table>
-		<center><p>Para regresar de click <a href="inicio.php" class="btn btn-warning">Aquí</a></p></center>
+	
 	</div>	
 </body>
