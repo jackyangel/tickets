@@ -18,6 +18,18 @@
 	<div class="log col-md-4 col-md-offset-4">
 	<h1><center>Tickets</center></h1>
 	<center><small>Usuario: <?php echo utf8_encode($_SESSION['nombreusr']); ?></small></center>
+	
+	<p>Para generar un nuevo ticket solo escribe el asunto y da click en guardar.</p>
+	<center>
+		<form class="form-inline" style="margin-bottom:10px; margin: o auto;" method="get" action="guardar.php">
+		  <div class="form-group" style="width:100px;">
+		    <label class="sr-only" for="exampleInputAmount"></label>
+		    <div class="input-group" style="width:100px;">
+		      <input type="text" class="form-control" name="asunto" placeholder="Asunto" style="width:100px;" required>
+		    </div>
+		  </div>
+		  <button type="submit" class="btn btn-primary" >guardar </button>
+		</form></center>	
 		<p>A continuación se muestra sus tickets:</p>
 		<table class="table table-bordered">
 			<tr>
